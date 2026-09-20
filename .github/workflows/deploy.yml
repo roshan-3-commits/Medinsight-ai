@@ -35,7 +35,7 @@ jobs:
         run: npm install --legacy-peer-deps
 
       - name: Build Vite App
-        run: npx vite build --base=/Medinsight-ai/
+        run: npx vite build --base=./
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
