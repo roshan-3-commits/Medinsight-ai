@@ -31,18 +31,11 @@ jobs:
         with:
           node-version: 20
 
-      - name: Check Project Structure
-        run: |
-          echo "Current working directory:"
-          pwd
-          echo "Files in root:"
-          ls -la
-
       - name: Install Dependencies
         run: npm install --legacy-peer-deps
 
       - name: Build Vite App
-        run: npm run build
+        run: npx vite build --base=/Medinsight-ai/
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
