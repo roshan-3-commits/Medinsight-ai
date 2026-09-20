@@ -231,7 +231,7 @@ export default function App() {
   const abnormalTotal = reports.filter((r) => r.summary.abnormalCount > 0).length;
 
   return (
-    <div className="flex h-screen w-screen overflow-hidden bg-slate-50 dark:bg-[#0b1120] text-slate-800 dark:text-slate-100 font-sans antialiased transition-colors">
+    <div className={`flex h-screen w-screen overflow-hidden ${theme === 'dark' ? 'dark bg-[#0b1120] text-slate-100' : 'bg-slate-50 text-slate-800'} font-sans antialiased transition-colors`}>
       {/* Auto-Sync Toast Notification */}
       {toast && (
         <div

@@ -170,10 +170,10 @@ export const Header: React.FC<HeaderProps> = ({
           <button
             id="btn-header-about-me"
             onClick={onOpenAboutMe}
-            className="flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-teal-500/15 to-emerald-500/15 hover:from-teal-500/25 hover:to-emerald-500/25 text-[#0d7a68] dark:text-teal-300 border border-teal-300/60 dark:border-teal-700/60 rounded-xl text-xs font-bold transition-all shadow-2xs cursor-pointer active:scale-95"
+            className="flex items-center gap-1.5 px-3 py-1.5 bg-[#0d7a68] hover:bg-[#0a6352] text-white rounded-xl text-xs font-bold transition-all shadow-sm hover:shadow-teal-900/30 cursor-pointer active:scale-95 border border-teal-400/30"
             title="View Developer & Project Information (Nisha Girraj Singh)"
           >
-            <GraduationCap className="w-3.5 h-3.5 text-[#0d7a68] dark:text-teal-300" />
+            <GraduationCap className="w-3.5 h-3.5 text-white" />
             <span className="hidden md:inline">About Me</span>
           </button>
         )}
@@ -181,10 +181,10 @@ export const Header: React.FC<HeaderProps> = ({
         {/* User Profile Area */}
         <div 
           onClick={onOpenProfile}
-          className="flex items-center gap-2.5 pl-1.5 pr-2 py-1 rounded-xl hover:bg-slate-100/80 dark:hover:bg-slate-800/80 transition-colors cursor-pointer border border-transparent hover:border-slate-200/80 dark:hover:border-slate-700/60"
+          className="flex items-center gap-2.5 pl-2 pr-2.5 py-1.5 rounded-xl hover:bg-slate-100/90 dark:hover:bg-slate-800/90 transition-colors cursor-pointer border border-transparent hover:border-slate-200/80 dark:hover:border-slate-700/60"
           title="Technician Account Profile"
         >
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-slate-900 to-slate-800 dark:from-teal-600 dark:to-teal-800 text-white flex items-center justify-center font-bold text-xs shadow-xs ring-1 ring-white/10">
+          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#0a6352] to-[#0d7a68] text-white flex items-center justify-center font-bold text-xs shadow-xs ring-1 ring-white/10">
             PJ
           </div>
           <div className="hidden sm:block text-left">
